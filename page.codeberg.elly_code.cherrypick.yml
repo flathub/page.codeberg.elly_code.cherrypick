@@ -34,6 +34,9 @@ modules:
         url: https://codeberg.org/elly-code/cherrypick.git
         tag: 2.5.0
         commit: 604d9182dbf5ef0b1d2fd2ec5a01bdf30d1c18cd
+        # Flathub's auto update bot
         x-checker-data:
           type: git
-          tag-pattern: '^\d+.\d+.\d+($|-\d+$)'
+          tag-pattern: '^\d+.\d+.\d+$'
+          sort-tags: false
+
